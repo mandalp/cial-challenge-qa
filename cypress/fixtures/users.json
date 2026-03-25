@@ -1,0 +1,22 @@
+{
+  "validUser": {
+    "username": "tomsmith",
+    "password": "SuperSecretPassword!",
+    "name": "Tom Smith",
+    "welcomeMessage": "You logged into a secure area!"
+  },
+  "invalidUsers": [
+    {
+      "scenario": "senha inválida",
+      "username": "tomsmith",
+      "password": "wrongpassword",
+      "message": "Your password is invalid!"
+    },
+    {
+      "scenario": "username inválido",
+      "username": "invaliduser",
+      "password": "SuperSecretPassword!",
+      "message": "Your username is invalid!"
+    }
+  ]
+}
