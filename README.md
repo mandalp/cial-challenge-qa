@@ -140,4 +140,26 @@ docker run --rm cypress-teste --spec "cypress/e2e/web.cy.js"
 docker run --rm cypress-teste --spec "cypress/e2e/api.cy.js"
 ```
 
+## Configuração de Ambiente
+
+A URL base da API pode ser configurada das seguintes formas:
+
+1. **Via arquivo de configuração** (`cypress.config.js`):
+```javascript
+env: {
+  API_BASE_URL: 'https://jsonplaceholder.typicode.com'
+}
+```
+
+2. **Via linha de comando**:
+```bash
+npx cypress run --env API_BASE_URL=https://sua-api.com
+```
+
+3. **Via variáveis de ambiente**:
+```bash
+export CYPRESS_API_BASE_URL=https://sua-api.com
+npx cypress run
+```
+
 
